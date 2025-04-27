@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> TailwindCSS </title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body class="bg-white">
-        
-    <header class="bg-transparent py-4 absolute top-0 left-0 right-0 z-10">
+
+    <header class="bg-black py-4 absolute top-0 left-0 right-0 z-10">
         <div class="container mx-auto px-4 flex items-center justify-between">
             <div class="text-white font-semibold text-3 xl">Eficaz SAF</div>
             <nav class="inline-flex items-center justify-between space-x-4">
@@ -19,22 +19,79 @@
                 <a href="#" class="text-white hover:text-indigo-300">Contato</a>
             </nav>
             <div class="flex items-center">
-                <a href="https://github.com/Flazao/Landing-Page-SAF" class="inline-flex items-center bg-black text-gray-100 text-center no-underline rounded-md text-base transition-all duration-300 ease-in-out hover:bg-white hover:text-black py-2 px-3" target="_blank">
-                    <img src="../tailwind/assets/image/github-mark.png" alt="github-logo" class="w-8 h-8 mr-2">
-                    Github
+                <a href="https://github.com/Flazao/Landing-Page-SAF"
+                    class="inline-flex items-center bg-black text-gray-100 text-center no-underline rounded-md text-base transition-all duration-300 ease-in-out hover:bg-white hover:text-black py-2 px-3"
+                    target="_blank">
+                    <img src="assets/image/github-mark.png" alt="github-logo" class="w-8 h-8 mr-2">
+                    GitHub
                 </a>
             </div>
         </div>
     </header>
-    
-    <main class="relative h-screen bg-[url(../tailwind/assets/image/meeting.jpg)] bg-no-repeat bg-cover bg-center">
-        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center text-center">
-            <div class="container mx-auto px-4 text-white">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Conheça a nossa equipe, um coletivo de desenvolvedores focados na melhoria.</h1>
-                <p class="text-lg md:text-xl lg:text-2xl mb-8">Saiba mais sobre nossos desenvedores e projetos em produção apartir desse landing page.</p>
+
+    <main class="relative bg-black h-screen text-white">
+        <div class="absolute inset-0 bg-black bg-opacity-100 flex items-center justify-center text-center">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Conheça a nossa equipe, um coletivo de
+                    desenvolvedores focados na melhoria.</h1>
+                <p class="text-lg md:text-xl lg:text-2xl mb-8">Saiba mais sobre nossos desenvedores e projetos em
+                    produção apartir desse landing page.</p>
             </div>
         </div>
     </main>
+    <div class="bg-white text-black py-16">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-3xl font-bold">Nossa abordagem</h2>
+            <p class="mt-4 text-lg">Somos um grupo de estudantes do 3º termo C de Análise e Desenvolvimento de Sistemas
+                da Universidade de Marília (Unimar).
+                Nosso trabalho é voltado para o desenvolvimento de soluções tecnológicas, combinando teoria e prática
+                para criar projetos inovadores e de alta qualidade.
+                Buscamos constante evolução, trabalhando em equipe, aplicando boas práticas de desenvolvimento e nos
+                preparando para os desafios do mercado de tecnologia.
+                Neste projeto, estamos desenvolvendo o SAF (Sistema de Acompanhamento de Funcionários), uma plataforma
+                que visa facilitar a gestão de recursos humanos.
+                O SAF permite o cadastro de funcionários, acompanhamento do tempo de serviço, controle de promoções,
+                geração de relatórios e acesso a informações como holerites e banco de horas.
+                O sistema foi criado para otimizar processos e proporcionar uma gestão mais eficiente e integrada.</p>
+        </div>
+    </div>
+    <section class="bg-gray-200 py-16">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-3xl font-semibold mb-8">Tecnologias Utilizadas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center">
+                    <img src="assets/image/c.png" alt="C#" class="w-32 h-32 mb-4">
+                    <p class="text-lg font-medium">C#</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="assets/image/htmlCssJs.png" alt="HTML, CSS, JS" class="w-32 h-32 mb-4">
+                    <p class="text-lg font-medium">HTML, CSS e JS</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="assets/image/mysql.png" alt="MySQL" class="w-32 h-32 mb-4">
+                    <p class="text-lg font-medium">MySQL</p>
+                </div>
+            </div>
+        </div>
+    </section>]
 
+    <div class="container mx-auto px-4 py-8">
+        <h2 class="text-3xl font-semibold text-center mb-6">Participantes do Projeto SAF</h2>
+        <div class="space-y-6">
+            <div class="bg-white p-6 rounded-lg shadow-md flex items-center">
+                <div class="flex-shrink-0">
+                    <img src="caminho pra ft do particpante" alt="nome do participante"
+                        class="w-24 h-24 rounded-full object-cover">
+                </div>
+                <div class="ml-6">
+                    <h3 class="text-2xl font-semibold text-blue-600">participante</h3>
+                    <p class="text-lg text-gray-700">Blabla</p>
+                    <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Necessitatibus ipsum exercitationem assumenda itaque ut commodi ex nostrum amet. Et, dolor
+                        distinctio? Blanditiis dolor repellendus aliquid at, assumenda nisi eaque eveniet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
